@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Добавить песню</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/form.js" defer></script>
+    <link rel="icon" href="img/favicon.ico" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="form.html">Добавить песню</a>
+        <a href="stats.html">Статистика</a>
+        <a href="about.html">О проекте</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <form id="songForm" class="form-card">
+        <label>Название песни *</label>
+        <input type="text" id="title" />
+
+        <label>Исполнитель *</label>
+        <input type="text" id="artist" />
+
+        <label>Альбом</label>
+        <input type="text" id="album" />
+
+        <label>Ссылка на фото альбома</label>
+        <input type="url" id="image" />
+
+        <label>Ссылка на аудио</label>
+        <input type="url" id="audioUrl" />
+
+        <label>Или загрузить аудиофайл</label>
+        <input type="file" id="audioFile" accept="audio/*" />
+
+        <div class="form-buttons">
+          <button type="submit" id="saveBtn" class="btn-primary" disabled>
+            Сохранить
+          </button>
+          <button type="button" id="cancelBtn" class="btn-secondary">
+            Отмена
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
